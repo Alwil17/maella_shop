@@ -1,0 +1,6 @@
+package com.maella.shop;
+
+import io.flutter.embedding.android.FlutterActivity;
+
+public class MainActivity extends FlutterActivity {
+}

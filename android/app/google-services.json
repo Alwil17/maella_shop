@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "858009140732",
+    "firebase_url": "https://maellashop-cd658.firebaseio.com",
+    "project_id": "maellashop-cd658",
+    "storage_bucket": "maellashop-cd658.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858009140732:android:c36d5d0075f507794c0679",
+        "android_client_info": {
+          "package_name": "com.maella.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858009140732-o4slnplbvhuec7qs5gl62qrhqs6kugvj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDueXIWoKrPLe906NwTV2nnNWnj7wBmM4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858009140732-o4slnplbvhuec7qs5gl62qrhqs6kugvj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
