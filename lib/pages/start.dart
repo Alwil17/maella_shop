@@ -32,21 +32,21 @@ class Start extends StatelessWidget{
             child: Column(
               children: <Widget>[
                 SizedBox(height: 100.0),
-                Image.asset('assets/sIcon.png', height: 180.0),
+                Image.asset('assets/sIcon.png', height: 100.0),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(0.0, 40.0, 0.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
                   child: Text(
                       'Bienvenue sur Maella Shop',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 35.0,
+                        fontSize: 25.0,
                         fontWeight: FontWeight.bold,
                         fontFamily: 'NovaSquare',
                       )
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(48.0, 35.0, 48.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(48.0, 15.0, 48.0, 0.0),
                   child: Text(
                     'Shop & get updates on new Products and sales with our mobile app',
                     textAlign: TextAlign.center,
@@ -57,7 +57,7 @@ class Start extends StatelessWidget{
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(0.0, 70.0, 0.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
                   child: ButtonTheme(
                     minWidth: 220.0,
                     child: FlatButton(

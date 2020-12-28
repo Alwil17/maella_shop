@@ -11,8 +11,8 @@ class Loader{
               onWillPop: () async => false,
               child: Container(
                 key: key,
-                child: SpinKitFoldingCube(
-                  color: Colors.green,
+                child: SpinKitRing(
+                  color: Colors.pink,
                   size: 50.0,
                 ),
               )

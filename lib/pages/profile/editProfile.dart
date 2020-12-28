@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:maella_shop/component/header.dart';
 import 'package:maella_shop/component/loader.dart';
 import 'package:maella_shop/component/profileAppBar.dart';
-import 'package:maella_shop/component/sidebar.dart';
 import 'package:maella_shop/services/profileService.dart';
 import 'package:maella_shop/services/validateService.dart';
 

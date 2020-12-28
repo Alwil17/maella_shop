@@ -64,7 +64,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             size: 35.0,
           ),
           onPressed: (){
-            if(slideIndex != 5){
+            if(slideIndex != 3){
               controller.animateToPage(slideIndex + 1, duration: Duration(milliseconds: 500), curve: Curves.linear);
             }
             else{
@@ -108,7 +108,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               Container(
                 child: Row(
                     children: [
-                      for (int i = 0; i < 6 ; i++) i == slideIndex ? _buildPageIndicator(true): _buildPageIndicator(false),
+                      for (int i = 0; i < 4 ; i++) i == slideIndex ? _buildPageIndicator(true): _buildPageIndicator(false),
                     ]
                 ),
               ),

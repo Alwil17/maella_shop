@@ -33,7 +33,7 @@ class SingleProduct extends StatelessWidget {
   Widget buildProduct(BuildContext context) {
     return Card(
       elevation: 10,
-      margin: EdgeInsets.all(10),
+      //margin: EdgeInsets.all(10),
       child: Container(
         width: MediaQuery.of(context).size.width / 2.25,
         height: MediaQuery.of(context).size.height / 3,

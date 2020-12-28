@@ -153,7 +153,7 @@ class _AddCreditCardState extends State<AddCreditCard> {
                       keyboardType: TextInputType.number,
                       validator: CreditCardValidation.validateCardNumber,
                       inputFormatters: [
-                        WhitelistingTextInputFormatter.digitsOnly,
+                        FilteringTextInputFormatter.digitsOnly,
                         LengthLimitingTextInputFormatter(16),
                         CardNumberInputFormatter()
                       ],
@@ -184,7 +184,7 @@ class _AddCreditCardState extends State<AddCreditCard> {
                       ),
                       keyboardType: TextInputType.number,
                       inputFormatters: [
-                        WhitelistingTextInputFormatter.digitsOnly,
+                        FilteringTextInputFormatter.digitsOnly,
                         LengthLimitingTextInputFormatter(4),
                         CardMonthInputFormatter()
                       ],

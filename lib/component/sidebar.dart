@@ -20,31 +20,29 @@ Widget sidebar(BuildContext context){
 
   return SafeArea(
     child: Drawer(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      child: ListView(
+        padding: EdgeInsets.zero,
         children: <Widget>[
-          ListView(
-            shrinkWrap: true,
-            children: <Widget>[
-              Expanded(
-                flex: 2,
-                child: UserAccountsDrawerHeader(
+          DrawerHeader(
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
+            child: UserAccountsDrawerHeader(
 //              decoration: BoxDecoration(image: DecorationImage(image: AssetImage("img/mazzad.png"))),
-                  accountName: Text("UserName"),
-                  accountEmail: Text("${user.email}"),
-                  currentAccountPicture: CircleAvatar(
-                    backgroundImage: AssetImage("img/logo.png"),
-                    radius: 50,
-                  ),
-                ),
+              accountName: Text("UserName"),
+              accountEmail: Text("${user.email}"),
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: AssetImage("img/logo.png"),
+                radius: 50,
               ),
-              ListTile(
+            ),
+          ),
+          ListTile(
                 leading: Icon(Icons.home),
                 title:Text(
                   'ACCUEIL',
                   style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 10.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0
                   ),
@@ -53,12 +51,12 @@ Widget sidebar(BuildContext context){
                   Navigator.popAndPushNamed(context, '/home');
                 },
               ),
-              ListTile(
+          ListTile(
                 leading: Icon(Icons.shopping_cart),
                 title: Text(
                   'SHOP',
                   style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 10.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0
                   ),
@@ -72,12 +70,12 @@ Widget sidebar(BuildContext context){
                   Navigator.pushReplacementNamed(context, '/shop',arguments: args);
                 },
               ),
-              ListTile(
+          ListTile(
                 leading: Icon(Icons.local_mall),
                 title: Text(
                   'PANIER',
                   style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 10.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0
                   ),
@@ -92,23 +90,23 @@ Widget sidebar(BuildContext context){
                   Navigator.pushReplacementNamed(context, '/bag', arguments: args);
                 },
               ),
-              ListTile(
+          ListTile(
                 leading: Icon(Icons.search),
                 title: Text(
                   'RECHERCHER',
                   style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 10.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0
                   ),
                 ),
               ),
-              ListTile(
+          ListTile(
                 leading: Icon(Icons.local_shipping),
                 title: Text(
                   'COMMANDES',
                   style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 10.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0
                   ),
@@ -120,12 +118,12 @@ Widget sidebar(BuildContext context){
                   Navigator.popAndPushNamed(context, '/placedOrder',arguments: {'data': orderData});
                 },
               ),
-              ListTile(
+          ListTile(
                 leading: Icon(Icons.favorite_border),
                 title: Text(
                   'FAVORIS',
                   style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 10.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0
                   ),
@@ -137,12 +135,12 @@ Widget sidebar(BuildContext context){
                   Navigator.popAndPushNamed(context, '/wishlist',arguments: {'userList':userList});
                 },
               ),
-              ListTile(
+          ListTile(
                 leading: Icon(Icons.person),
                 title: Text(
                   'PROFIL',
                   style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 10.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0
                   ),
@@ -154,12 +152,12 @@ Widget sidebar(BuildContext context){
                   Navigator.popAndPushNamed(context, '/profile',arguments: userProfile);
                 },
               ),
-              ListTile(
+          ListTile(
                 leading: new Icon(Icons.exit_to_app),
                 title: Text(
                   'DECONNEXION',
                   style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 10.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0
                   ),
@@ -168,10 +166,8 @@ Widget sidebar(BuildContext context){
                   _userService.logOut(context);
                 },
               )
-            ],
-          )
         ],
-      ),
+      )
     ),
   );
 }

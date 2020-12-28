@@ -4,9 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:maella_shop/component/header.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
-import 'package:maella_shop/component/home/categoryCarousel.dart';
-import 'package:maella_shop/component/products/category.dart' as Cat;
-import 'package:maella_shop/component/home/gridListItem.dart';
 import 'package:maella_shop/component/products/details.dart';
 import 'package:maella_shop/component/sidebar.dart';
 
